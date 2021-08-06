@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bai1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 17px;
+}
+.bai1 h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.bai1 h2 strong {
+    color: #0FB3F0;
+}
+
+.bai1 .lorem {
+    margin: 20px;
+}
+.list {
+    margin-top: 40px;
+}
+.list li {
+    display: inline;
+    margin: 0 20px;
+}
+.list li a {
+    text-decoration: none;
+    background-color: black;
+    border-radius: 7px;
+    color: white;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    min-width: 180px;
+
+}
+.list li a:hover{
+    background-color: #0FB3F0;
+}
