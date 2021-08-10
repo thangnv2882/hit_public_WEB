@@ -1,0 +1,67 @@
+buoi 4 - layout -  bô cuc cua trang web
+
++ sizing elements (width, height)
++ position : vị trí của elements
+
+
+1, position : relative (vị trí tương đối)
+    + xac định vị trí của pt dựa trên vị trí ban đầu của nó
+        => vị trí ban đầu (bình thường): position: static
+    + không ảnh hưởng đến các yếu tố khác
+
+2, position : absolute (vị trí tuyệt đối)
+    + xác định vị trí của một pt dựa theo vị trí của thùng chứa nó
+    + ảnh hưởng đến các phần tử khác trong trang
+    + thùng chứa mặc định : body
+
+3, position : fixed (vị trí tương đối theo khung nhìn (viewport))
+    + xac định vị trí của pt dựa trên viewport (khung nhìn)
+    + ứng dụng => navigation bar
+
+=> 2 cách xác định kích thước của 1 element
+    + width, height 
+    + top, right, bottom,left
+
+units (đơn vị)
+    + absolute units : (đơn vị tuyệt đối): px
+        => chỉ dùng khi cần cố định kich thước 
+        (hay kích thước không thay đổi : border, font-size,...)
+
+    + relative units : đơn vị tương đối 
+        %: kích thước = % so với kich thước vùng chứa của nó
+        em,rem: so font-zise (vd: width: 2rem = 2*16px )
+            em: so với font-size của current element (p,div,h1,...)
+            rem: so với font-size của root element (body)
+        vw: viewport width (khung nhìn theo chiều rông = 0-100vw)
+        vh: viewport height (khung nhìn theo chiều cao = 0-100vh)
+
+flexbox - flexible box layout
+
+    sap xep, dieu chinh cac phan tu theo mot huong nhat dinh
+    display: flex
+
+    flex-direction: xác định hướng can dieu chinh (default: row)
+
+    align-items = căn chỉnh các mục
+
+        trong flex có 2 axis flex (2 trục)
+        - main axis (trục chính)
+        - cross axis (truc phụ)
+
+        các xác định truc phụ thuộc vào direction (hướng/chiều của flex)
+        direction = row => main: x, cross: y
+        direction = column => main: y, cross: x
+
+     2 property phổ biến để căn chỉnh trong flex   
+        justify-content = căn chỉnh cac muc doc theo truc chinh
+        align-items = căn chỉnh các mục doc theo truc phu
+
+        flex-wrap: wrap 
+        align-content = dieu chinh khi flex > 2 dong
+
+        align-self: ghi de lai align-items 
+
+    sizing items
+        flex-basis (ghi đè lại width và height, phụ thuộc vào hướng của flex)
+        flex-grow
+        flex-shrink

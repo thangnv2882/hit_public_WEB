@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        max-width: 100%;
+        min-height: 600px;
+        font-size: 1.5rem;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 6fr 4fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+          "header header"
+          "content1 content2"
+          "footer footer";
+      }
+      .item1 {
+        grid-area: header;
+        background-color: hotpink;
+      }
+      .item2 {
+        grid-area: content1;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5fr 3fr 2fr;
+        grid-template-areas:
+          "content11 content11"
+          "content12 content13"
+          "content14 content13";
+      }
+
+      .item4 {
+        grid-area: footer;
+        background-color: rgb(68, 177, 162);
+      }
+      .item5 {
+        grid-area: header;
+        background-color: rgb(164, 64, 211);
+      }
+      .item6 {
+        grid-area: content11;
+        background-color: rgb(155, 175, 68);
+      }
+      .item7 {
+        grid-area: content12;
+        background-color: rgb(26, 204, 136);
+      }
+      .item8 {
+        grid-area: content13;
+        background-color: rgb(89, 177, 228);
+      }
+      .item9 {
+        grid-area: content14;
+        background-color: rgb(236, 100, 10);
+      }
+      .item3 {
+        grid-area: content2;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr 1fr 6fr 1fr;
+        grid-template-areas:
+          "ct1 ct1 ct1"
+          "ct2 ct2 ct2"
+          "ct31 ct32 ct33"
+          "ct4 ct4 ct4";
+      }
+      .item10 {
+        grid-area: ct1;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "a b";
+      }
+      .item11 {
+        grid-area: ct2;
+        background-color: hotpink;
+      }
+
+      .item12 {
+        grid-area: ct31;
+        background-color: rgb(49, 138, 138);
+      }
+      .item13 {
+        grid-area: ct32;
+        background-color: rgb(21, 121, 29);
+      }
+      .item14 {
+        grid-area: ct33;
+        background-color: rgb(83, 22, 163);
+      }
+      .item15 {
+        grid-area: ct4;
+        background-color: rgb(141, 184, 24);
+      }
+      .item16 {
+        grid-area: a;
+        background-color: rgb(231, 198, 9);
+      }
+      .item17 {
+        grid-area: b;
+        background-color: rgb(155, 79, 112);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">header</div>
+      <div class="item2">
+        <div class="item6">content</div>
+        <div class="item7">content</div>
+        <div class="item8">content</div>
+        <div class="item9">content</div>
+      </div>
+      <div class="item3">
+        <div class="item10">
+          <div class="item16">content</div>
+          <div class="item17">content</div>
+        </div>
+        <div class="item11">content</div>
+        <div class="item12">content</div>
+        <div class="item13">content</div>
+        <div class="item14">content</div>
+        <div class="item15">content</div>
+      </div>
+      <div class="item4">footer</div>
+    </div>
+  </body>
+</html>
