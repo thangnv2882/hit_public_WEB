@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header {
+    border: 0 solid black;
+    height: 200px;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    background-color: rgb(182, 237, 248);
+}
+.header img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 0 0 150px;
+    border: 2px solid rgb(116, 116, 223);
+}
+.header p {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+/* Css information */
+.infor .head1 {
+    font-size: 35px;
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+}
+
+.infor .head2 {
+    display: flex;
+    justify-content: center;
+}
+.infor .head2 .column1 {
+    margin: 0 70px 0 0;
+}
+.infor .head2 .column2 {
+    margin: 0 0 0 70px;
+}
+
+/* Css Pet */
+.row1 {
+    font-size: 25px;
+    border: 0px solid black;
+    background-color: #5FB7EB;
+    padding: 10px 0 10px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.pic {
+    display: flex;
+    flex-direction: row;
+}
+.pic p{
+    text-decoration: none;
+}
+.pic1 {
+    margin-top: 5px;
+    border: 2px solid #00e1ff;
+    border-radius: 5px;
+}
+.pic1--center {
+    margin: 5px 5px 0 5px;
+}
+.pic1 img {
+    height: 250px;
+}
+.pic1 p {
+    font-size: 20px;
+    border: 0 solid black;
+    background-color: #c0f8ff;
+    padding: 5px 10px;
+    font-weight: 550;
+}
+
+/* Css Blog */
+.box img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.box .box1 {
+    display: flex;
+    padding: 10px 150px 10px 15px;
+    margin: 5px 0 0 0;
+    border: 2px solid #00e1ff;
+    border-radius: 5px;
+}
+.box1 .text {
+    margin: 10px 0 0 15px;
+    font-size: 18px;
+}
+.box1 .text .mot {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+/* Css Footer */
+.footer {
+    margin: 50px 0 0 0;
+    font-size: 40px;
+    font-weight: bold;
+    border: 0px solid black;
+    background-color: #d2f8f3;
+    color: hsl(17, 100%, 50%);
+    text-align: center;
+    padding: 50px;
+}
+
+
