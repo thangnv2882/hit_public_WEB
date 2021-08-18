@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F9ECDE;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+.header img {
+  width: 100%;
+}
+.gioithieu h1 {
+  margin: 100px 0 0 0;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+.gioithieu h1:hover {
+  transition: all 0.25s;
+  color: rgb(19, 128, 230);
+}
+.gioithieu p {
+  font-size: 25px;
+}
+.content div h2{
+  font-size: 45px;
+  margin: 130px 0 30px 0;
+  padding-left:0px;
+  color: rgb(245, 79, 79);
+}
+.content div h2:hover {
+  transition: all 0.25s;
+  color: rgb(19, 128, 230);
+}
+.cocau .nhanvat {
+  display: flex;
+  justify-content: center;
+}
+.nhanvat div img{
+  width: 300px;
+  height: 500px;
+  border-radius: 5%;
+  margin: 10px 0 20px 0;
+}
+.nhanvat .tattrung, .nhanvat .doanvu, .nhanvat .hongphuong {
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.nhanvat .tattrung:hover, .nhanvat .doanvu:hover, .nhanvat .hongphuong:hover  {
+  transform: scale(1.05);
+}
+.nhanvat .doanvu{
+  margin: 0 80px;
+}
+
+.nhanvat div p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.hoatdong h3 {
+  font-size: 25px;
+  margin: 25px 0;
+}
+.hoatdong .hdc {
+  display: flex;
+}
+.hoatdong .hdc img {
+  height: 400px;
+  width: auto;
+  border-radius: 15px;
+}
+.hoatdong .hdc p {
+  font-size: 25px;
+  text-align: center;
+  margin: 50px 50px 0 0;
+}
+.hoatdong .hdnk .column {
+  flex-direction: column;
+  display: flex;
+}
+.hoatdong .hdnk h3 {
+  margin: 20px 30px;
+}
+.hoatdong .hdnk .flex1, .hoatdong .hdnk .flex2{
+  display: flex;
+  margin: 10px 0;
+}
+.column .flex1 img, .column .flex2 img  {
+  width: 33%;
+  border-radius: 2%;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.column .flex1 img:hover, .column .flex2 img:hover {
+  transform: scale(1.05);
+} 
+.column .flex1 .center, .column .flex2 .center {
+  margin: 0 2%;
+}
+.loichuc .nd {
+  display: flex;
+}
+.loichuc .nd img {
+  height: 400px;
+  border-radius: 2%;
+}
+.loichuc .nd p {
+  width: 50%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  text-align: center;
+  margin: 50px 100px auto 0 ;
+}
+
+.footer .lienhe {
+  display: flex;
+}
+.footer .lienhe p, .footer .lienhe a {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  margin: auto 100px auto 0 ;
+  text-decoration: none;
+  color: black;
+}
+.footer .lienhe a:hover {
+  transition: all 0,25s;
+  font-weight: bold;
+  opacity: 0.8;
+}
+.end {
+  padding-bottom: 50px;
+}
