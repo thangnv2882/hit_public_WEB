@@ -1,0 +1,95 @@
+* 
+{
+  margin: 20px 0 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-color: rgb(58, 67, 73);
+}
+#click_all, #click_app, #click_card, #click_web
+{
+  display: none;
+}
+.text
+{
+  color: white;
+  margin: 20px 15px;
+  padding: 7px 10px;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.text_all
+{
+  margin-left: 35%;
+}
+
+.img_all, .img_app, .img_card, .img_web
+{
+  flex-wrap: wrap;
+  margin: 20px 25%;
+  justify-content: center;
+  display: none;
+}
+.img_all img, .img_app img, .img_card img, .img_web img
+{
+  width: 27%;
+  margin: 12px;
+  box-shadow: 0 0 15px rgb(65, 221, 135);
+  border-radius: 5px;
+}
+
+#click_all:checked ~ * .img_all
+{
+  visibility: visible; 
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+#click_app:checked ~ * .img_app
+{
+  visibility: visible;
+  display: block;
+}
+#click_card:checked ~ * .img_card
+{
+  visibility: visible;
+  display: block;
+
+}
+#click_web:checked ~ * .img_web
+{
+  visibility: visible;
+  display: block;
+}
+
+#click_all:checked ~ .text_all, 
+#click_app:checked ~ .text_app, 
+#click_card:checked ~ .text_card, 
+#click_web:checked ~ .text_web
+{
+  background-color: rgb(65, 221, 135);
+  box-shadow: 0 0 5px rgb(65, 221, 135);
+}
+
+#click_all:hover ~ .text_all, 
+#click_app:hover ~ .text_app, 
+#click_card:hover ~ .text_card, 
+#click_web:hover ~ .text_web
+{
+  background-color: rgb(70, 97, 97);
+  transition: 0.5s;
+}
+
+#click_all:hover ~ .text_all, 
+#click_app:hover ~ .text_app, 
+#click_card:hover ~ .text_card, 
+#click_web:hover ~ .text_web
+{
+  background-color: rgb(65, 221, 135);
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgb(65, 221, 135);
+}
