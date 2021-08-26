@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: linear-gradient(to left top, rgb(241, 28, 28, 0.8) , rgb(0, 0, 253, 0.8));
+  background-repeat: no-repeat;
+}
+.fixed {
+  height: 70px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+.all {
+  width: 1100px;
+  margin: 100px auto;
+  background-color: rgba(87, 57, 57, 0.5);
+  padding-bottom: 50px;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  width: 1100px;
+}
+.nav-menu ul {
+  display: flex;
+}
+.nav-menu ul li {
+  list-style: none;
+  margin:  0 10px;
+}
+.nav-menu ul li a {
+  color: rgb(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+.nav-menu ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: rgb(0, 255, 0);
+  transition: all 0.25s;
+}
+.nav-menu ul li:hover a {
+  color: #fff;
+}
+.nav-menu ul li:hover a::after{
+  width: 100%;
+  transition: all 0.25s;
+}
+.check {
+  color: rgb(255, 255, 255, 0.9);
+  padding-top: 20px;
+}
+.check h1 {
+  color: #fff;
+  margin: 0 0 16px 20px;
+}
+.check .check-content {
+  display: flex;
+  justify-content: center;
+}
+.check .check-content .col1,
+.check .check-content .col2 {
+  width: 50%;
+  margin: 0 20px;
+}
+.sumary h2, .education h2, .professional h2{
+  font-size: 28px;
+  margin-top: 20px;
+  color: #fff;
+}
+.alice, .master, .bachelor, .senior, .graphic {
+  display: flex;
+}
+.alice-left .circle,
+.master-left .circle,
+.bachelor-left .circle,
+.senior-left .circle,
+.graphic-left .circle {
+  width: 16px;
+  height: 16px;
+  background-color: rgb(0, 255, 0);
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.alice-left .line,
+.master-left .line,
+.bachelor-left .line,
+.senior-left .line,
+.graphic-left .line {
+  width: 2px;
+  height: 95%;
+  background-color: rgb(0, 255, 0);
+  margin: 0 20px 0 7px;
+}
+.alice-right h3,
+.master-right h3,
+.bachelor-right h3,
+.senior-right h3, 
+.graphic-right h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: rgb(0, 255, 0);
+}
+.alice-right ul,
+.senior-right ul,
+.graphic-right ul {
+  margin-left: 16px;
+}
+.alice-right ul li,
+.senior-right ul li,
+.graphic-right ul li {
+  margin: 10px 0;
+}
+.master-right .year,
+.bachelor-right .year,
+.senior-right .year,
+.graphic-right .year
+ {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  border: 1px solid;
+  width: 35%;
+  background-color: rgba(255, 192, 181, 0.3);
+  padding: 5px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+}
+
+.master-right p,
+.bachelor-right p {
+  margin: 12px 0;
+}
+
