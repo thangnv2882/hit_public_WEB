@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #070C1F;
+}
+p::selection,
+a::selection,
+img::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection
+{
+  background-color: #16CF16;
+  color: #fff;
+}
+.header {
+  width: 100%;
+  margin:  0 auto;
+  position: fixed;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+  z-index: 100;
+}
+.header .nav {
+  background-color: #070C1F;
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+} 
+.nav img {
+  height: 34px;
+  width: 66px;
+}
+/* .header-fix {
+  position: fixed !important;
+  top: 100;
+  left: 0;
+  animation: smoothScroll 1s forwards; 
+}
+@keyframes smoothScroll {
+  0% {
+    transform: translate(100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+} */
+#nav-menu li {
+  display: inline-block;
+}
+#nav-menu > li > a {
+  color: white;
+  font-size: 16px;
+}
+#nav-menu li a {
+  text-decoration: none;
+  padding: 10px 18px;
+  transition: 0.4s all;
+}
+#nav-menu > li:hover > a,
+#nav-menu .subnav li:hover {
+  color: #16CF16;
+  transition: 0.4s all;
+  border-radius: 5px;
+}
+#nav-menu li:hover .subnav {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  border-radius: 2px;
+}
+#nav-menu li:hover a {
+  display: inline-block;
+}
+#nav-menu .subnav {
+  min-width: 130px;
+  background-color: white;
+  display: none;
+  transition: 0.4s all;
+}
+#nav-menu .subnav li a {
+  margin: 4px 10px;
+  font-weight: 500;
+}
+
+#nav-menu .subnav li {
+  border-bottom: 1px solid rgba(31, 30, 30, 0.219);
+}
+
+#nav-menu .subnav li:hover a {
+  color: #16CF16;
+  transition: 0.4s all;
+}
+
+#nav-menu, .subnav {
+  list-style: none;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+#nav-menu .subnav a {
+  color: black;
+  padding: 0 16px;
+  line-height: 40px;
+}
+
+.btn {
+  width: 200px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16CF16;
+  color: #000;
+  border-radius: 50px;
+  font-weight: 650;
+  gap: 14px;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #202536;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+
+/* CSS HOME */
+#home {
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+#home .home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.home-content h1 {
+  color: white;
+  font-size: 72px;
+  font-weight: 700;
+}
+.home-content .text {
+  color: rgba(255, 255, 255, 0.514);
+  margin: 40px 0;
+  line-height: 30px;
+}
+
+.box {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.box::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.103);
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+.line-box {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: #16CF16;
+  position: absolute;
+  top: 500px;
+  z-index: 100;
+}
+.box .box1 {
+  width: 23%;
+  height: 179px;
+  background-color: #202536;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 4px;
+}
+.box .box1 .num {
+  color: #16CF16;
+  font-size: 36px;
+  font-weight: 600;
+}
+.box .box1 .box-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* CSS ABOUT */
+#about {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  padding-top: 140px;
+}
+#about img {
+  margin: 0 0 50px;
+}
+.title {
+  width: fit-content;
+  color: #16CF16;
+  background-color: #202536;
+  text-align: center;
+  padding: 5px 24px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+}
+h2 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.text {
+  font-size: 18px;
+  color: #A6A6A6;
+  margin-bottom: 32px;
+}
+
+/* CSS SYMPTOMS */
+#symptoms {
+  width: 1140px;
+  margin: 0 auto;
+}
+#symptoms .symptoms-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding-top: 140px;
+}
+.symptoms-content .symptoms-list {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.symptoms-list .list {
+  width: 40%;
+  display: flex;
+  margin-bottom: 24px;
+}
+.symptoms-list .list i {
+  color: #16CF16;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+.symptoms-list .list p {
+  font-size: 18px;
+  color: #A6A6A6;
+}
+.symptoms-content img {
+  margin-bottom: 30px;
+}
+#symptoms .symptoms-threat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+}
+#symptoms .symptoms-threat .text {
+  width: 750px;
+  text-align: center;
+}
+
+
+/* CSS Covid Spread */
+#spread {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  padding-top: 140px;
+}
+#spread .spread-pic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  width: 120%;
+}
+#spread .spread-pic .pic-box {
+  width: 46%;
+  height: 245px;
+  background-color: #1A1F31;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 24px;
+  transition: all 0.5s;
+}
+#spread .spread-pic .pic-box:hover {
+  transform: rotate(2deg);
+  transition: all 0.5s;
+}
+.spread-pic .pic-box:nth-child(1) img {
+  margin-top: 36px;
+}
+.spread-pic .pic-box h6 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+#spread .spread-content .list {
+  display: flex;
+  margin-bottom: 40px;
+}
+.spread-content .list i {
+  color: #16CF16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+.spread-content .list .list-text {
+  margin: 0;
+}
+
+
+/* CSS Covid Prevention */
+#prevention {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 140px;
+}
+#prevention .text:nth-child(3) {
+  width: 750px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#prevention .prevention-box {
+  display: flex;
+  gap: 28px;
+}
+.col1 h3 {
+  color: #fff;
+  font-size: 24px;
+}
+.col1 h3 .green {
+  color: #16CF16;
+}
+.col1 h3 .red {
+  color: #E95030;
+}
+.col1 .box {
+  background-color: #1A1F31;
+  padding: 20px 20px 0;
+  margin-top: 32px;
+  border-radius: 5px;
+}
+.col1 .box img {
+  width: 72px;
+  height: 72px;
+  margin-right: 20px;
+  background-color: #202536;
+  border-radius: 6px;
+  transition: all 0.5s;
+
+}
+.col1 .box img:hover {
+  transform: rotate(5deg);
+  transition: all 0.5s;
+}
+.col1 .box h4 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+#news_feed {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 140px;
+}
+#news_feed .text:nth-child(3) {
+  width: 750px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#news_feed .news-obj {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#news_feed .news-obj .obj {
+  width: 32%;
+  padding: 5px;
+}
+.news-obj .obj h5 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 33px;
+  margin-bottom: 20px;
+}
+.obj .image .time {
+  color: #000;
+  background-color: #16CF16;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  position: absolute;
+}
+.obj .image img {
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+.obj .image {
+  transition: all 0.4s;
+  
+}
+.obj .image:hover {
+  transform: rotate(2deg);
+  transition: all 0.4s;
+}
+.obj a {
+  font-size: 16px;
+  color: #16CF16;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  margin-right: 6px;
+  line-height: 21px;
+  position: relative;
+  transition: all 0.5s;
+}
+.obj i {
+  font-size: 14px;
+  color: #16CF16;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 24%;
+  top: 30%;
+}
+.obj a:hover, .obj a:hover i {
+  color: #fff;
+  transition: all 0.5s;
+}
+
+/* CSS Test Covid */
+#test-covid {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 140px;
+  background-color: #202536;
+  padding: 60px 0;
+  border-radius: 5px;
+}
+#test-covid .text {
+  width: 650px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#test-covid .btn2 {
+  display: flex;
+  gap: 32px;
+}
+#test-covid .btn2 a {
+  background-color: #202536;
+  border: 1px solid #16CF16;
+  border-radius: 50px;
+  padding: 18px 36px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.4s;
+}
+#test-covid .btn2 i {
+  margin-right: 8px;
+}
+#test-covid .btn2 a:hover {
+  background-color: #16CF16;
+  transition: all 0.4s;
+}
+
+/* CSS More  */
+#more {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 140px;
+  color: rgb(155, 153, 153);
+  gap: 50px;
+}
+#more .covidy {
+  width: 30%;
+}
+#more .covidy .text {
+  font-size: 16px;
+  margin-top: 20px;
+}
+#more .covidy .social {
+  display: flex;
+  gap: 20px;
+}
+#more .covidy .social a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: rgb(155, 153, 153);
+  background-color: #202536;
+  font-size: 14px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s;
+
+}
+#more .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+#more .col .links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+#more .col .links i {
+  color: #16CF16;
+  font-size: 14px;
+}
+#more .col .links .links-text {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+}
+#more .col a {
+  font-size: 16px;
+  color: rgb(155, 153, 153);
+  text-decoration: none;
+  transition: all 0.4s;
+
+}
+#more .col a:hover,
+#more .covidy .social a:hover {
+  opacity: 0.7;
+  transition: all 0.4s;
+}
+
+.foot {
+  margin-top: 140px;
+  border-top: 1px solid rgba(255, 255, 255, 0.103);
+}
+#footer {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+#footer .f-left {
+  display: flex;
+  color: rgb(155, 153, 153);
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+#footer .f-left i {
+  font-size: 12px;
+}
+#footer .f-left .copy {
+  font-size: 14px;
+}
+#footer a {
+  color: rgb(155, 153, 153);
+  text-decoration: none;
+}
+
+.fly {
+  transition: all 0.5s linear;
+  animation: flying 2s infinite alternate ease-in-out;
+}
+@keyframes flying {
+  0% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(2%);
+  }
+}

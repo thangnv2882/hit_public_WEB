@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 20px;
+}
+.header .header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 8px;
+}
+.header .header-left img {
+  width: 150px;
+}
+
+.header-left .box {
+  height: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 12px;
+  display: flex;
+  align-items: center;
+}
+.header-left .box i {
+  color: rgba(44, 44, 44, 0.575);
+  font-size: 18px;
+}
+
+.header-left .box input {
+  border: 0;
+  background: none;
+  outline: none;
+  height: 36px;
+  color: rgba(44, 44, 44, 0.575);
+}
+.header-left .box input::placeholder {
+  color: rgba(44, 44, 44, 0.575);
+  font-size: 14px;
+}
+
+.header .header-right {
+  width: 70%;
+  height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FBD116;
+  gap: 10px;
+  padding: 8px;
+}
+.header .header-right .obj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header-right .obj h3 {
+  font-size: 17px;
+}
+
+
+.content {
+
+}
+.content .content-left {
+  width: 20%;
+}
+.content .content-left .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #2DA7E6;
+  padding: 16px 0;
+  color: #fff;
+  font-weight: 600;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list .list-item {
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+  position: relative;
+  color: rgb(93, 93, 93);
+
+}
+.list .list-item a {
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  transition: all 0.3s;
+}
+.list .list-item a:hover {
+  color: #2DA7E6;
+  transition: all 0.3s;
+}
+.list .list-item i:nth-child(3) {
+  position: absolute;
+  right: 10px;
+}
